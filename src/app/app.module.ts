@@ -4,17 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
-import { RepsComponent } from './reps/reps.component';
-import { HomeComponent } from './home/home.component';
+import { WorkoutComponent } from './workout/workout.component';
+import { FormsModule } from '@angular/forms';
+import { WorkoutHistoryComponent } from './workout-history/workout-history.component';
 
 @NgModule({
-  declarations: [AppComponent, AboutComponent, RepsComponent, HomeComponent],
+  declarations: [AppComponent, AboutComponent, WorkoutComponent, WorkoutHistoryComponent],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
-      { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
-      { path: '', component: HomeComponent },
+      { path: 'workouts', component: WorkoutComponent },
+      { path: 'workouts-history', component: WorkoutHistoryComponent },
+      { path: '', component: AboutComponent },
     ]),
   ],
   providers: [],

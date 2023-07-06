@@ -1,0 +1,5 @@
+/* Add gray background to alternate top-level list-group-item elements and all their child elements */
+.list-group-parent>.list-group-item:nth-child(even), 
+.list-group-parent>.list-group-item:nth-child(even) * {
+    background-color: #f8f8f8;
+}

@@ -1,0 +1,18 @@
+
+<div class="workout-background">
+    <h2 class="text-center">Workouts History </h2>
+    <div class="history-workout-section">
+        <ul class="list-group list-group-parent">
+            <li *ngFor="let workout of workoutHistory" class="list-group-item">
+                <h5>{{ workout.date }}</h5>
+                <ul class="list-group">
+                    <li *ngFor="let history of workout.workouts"
+                        class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>{{ history.name }}</span>
+                        <span>{{ history.repetitions }} repetitions</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

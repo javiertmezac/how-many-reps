@@ -1,0 +1,18 @@
+/* src/app/workout/workout.component.css */
+
+.workout-background {
+    /* background-image: url('https://www.shutterstock.com/image-photo/crossfit-equipment-on-floor-gym-260nw-756989800.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 50px 0;
+  }
+
+.current-workout-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
