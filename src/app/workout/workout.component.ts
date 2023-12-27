@@ -9,9 +9,10 @@ import { WorkoutHistory } from './workout-history.model';
 })
 export class WorkoutComponent implements OnInit {
   workouts: Workout[] = [
-    { name: "Push-ups", repetitions: 5 },
-    { name: "Squats", repetitions: 10 },
-    { name: "Sit-ups", repetitions: 15 }
+    { name: "Push-ups", repetitions: 0 },
+    { name: "Pull-ups", repetitions: 0 },
+    { name: "Squats", repetitions: 0 },
+    { name: "Sit-ups", repetitions: 0 }
   ];
 
   newWorkout: Workout = { name: '', repetitions: 0 }
