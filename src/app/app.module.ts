@@ -17,7 +17,7 @@ import { WorkoutHistoryComponent } from './workout-history/workout-history.compo
       { path: 'about', component: AboutComponent },
       { path: 'workouts', component: WorkoutComponent },
       { path: 'workouts-history', component: WorkoutHistoryComponent },
-      { path: '', component: AboutComponent },
+      { path: '', component: WorkoutComponent },
     ]),
   ],
   providers: [],
